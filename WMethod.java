@@ -380,6 +380,14 @@ public class WMethod{
      pTableManager w = new pTableManager(FSM, numberOfStates, realInput);
      Vector <String> tests=generateTests(transitionCover, w); // Generate tests.
      Utilities.printAllTestCases(tests); // Print tests.
+     
+     /* Intialize loop that goes through all test cases. 
+      * Utilizes Utilities.runFSM to go through each test. 
+      */
+     Scanner reader = new Scanner (System.in);
+     System.out.println("Do you want to see Junit Tests or FSM run through test cases? (junit, fsm)");
+     String ans = reader.nextLine(); 
+     reader.close();
      for (int i = 0; i <= tests.size() - 1; i++)
      {
     	StringBuilder temp = new StringBuilder(); 
@@ -389,16 +397,21 @@ public class WMethod{
     	{
     		char t = x.charAt(b);
     		temp.append(t);
-    		if (b != x.length())
-    			temp.append(' ');
+    		if (b != x.length() - 1)
+    		temp.append(' ');
     	}
-    	Utilities.runFSM(FSM, 1, temp.toString(), " ");
+    		if (ans.toLowerCase().equals("junit"))
+    		{
+    			Utilities.runFSMlite(FSM, 1, temp.toString(), Character.toString(' '));
+    			System.out.print("'" + temp.toString() + "'" + ")");
+    			System.out.println();
+    		}
+    		if (ans.toLowerCase().equals("fsm"))
+    		{
+    			Utilities.runFSM(FSM, 1, temp.toString(), Character.toString(' '));
+    			System.out.println();
+    		}
      }
-     // TODO: 	Write the necessary code to iterate through all test cases and run them against
-     // 		the FSM using the Utilities.runFSM() method. 
-     //
-     // Example use of the Utilities.runFSM() method
-     // Utilities.runFSM(FSM, 1, "a a b a b", " ");
      
    }// End of main()
    
