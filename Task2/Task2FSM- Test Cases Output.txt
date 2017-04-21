@@ -1,0 +1,238 @@
+Number of Test Cases :17
+Test cases: [000001, 00001, 0001, 000101, 00011, 001, 00101, 0011, 01, 01001, 0101, 011, 01101, 0111, 1, 101, 11]
+Test Case #1 000001
+
+FSM execution begins. Input: 0 0 0 0 0 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 0 Next state: 3 Output: 0
+Current state: 3
+ Input: 0 Next state: 4 Output: 0
+Current state: 4
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 0 Next state: 3 Output: 0
+Current state: 3
+ Input: 1 Next state: 5 Output: 0
+
+FSM execution completed. Final state: 5
+Output pattern:000000
+Test Case #2 00001
+
+FSM execution begins. Input: 0 0 0 0 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 0 Next state: 3 Output: 0
+Current state: 3
+ Input: 0 Next state: 4 Output: 0
+Current state: 4
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 1 Next state: 5 Output: 0
+
+FSM execution completed. Final state: 5
+Output pattern:00000
+Test Case #3 0001
+
+FSM execution begins. Input: 0 0 0 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 0 Next state: 3 Output: 0
+Current state: 3
+ Input: 0 Next state: 4 Output: 0
+Current state: 4
+ Input: 1 Next state: 3 Output: 1
+
+FSM execution completed. Final state: 3
+Output pattern:0001
+Test Case #4 000101
+
+FSM execution begins. Input: 0 0 0 1 0 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 0 Next state: 3 Output: 0
+Current state: 3
+ Input: 0 Next state: 4 Output: 0
+Current state: 4
+ Input: 1 Next state: 3 Output: 1
+Current state: 3
+ Input: 0 Next state: 4 Output: 0
+Current state: 4
+ Input: 1 Next state: 3 Output: 1
+
+FSM execution completed. Final state: 3
+Output pattern:000101
+Test Case #5 00011
+
+FSM execution begins. Input: 0 0 0 1 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 0 Next state: 3 Output: 0
+Current state: 3
+ Input: 0 Next state: 4 Output: 0
+Current state: 4
+ Input: 1 Next state: 3 Output: 1
+Current state: 3
+ Input: 1 Next state: 5 Output: 0
+
+FSM execution completed. Final state: 5
+Output pattern:00010
+Test Case #6 001
+
+FSM execution begins. Input: 0 0 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 0 Next state: 3 Output: 0
+Current state: 3
+ Input: 1 Next state: 5 Output: 0
+
+FSM execution completed. Final state: 5
+Output pattern:000
+Test Case #7 00101
+
+FSM execution begins. Input: 0 0 1 0 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 0 Next state: 3 Output: 0
+Current state: 3
+ Input: 1 Next state: 5 Output: 0
+Current state: 5
+ Input: 0 Next state: 4 Output: 0
+Current state: 4
+ Input: 1 Next state: 3 Output: 1
+
+FSM execution completed. Final state: 3
+Output pattern:00001
+Test Case #8 0011
+
+FSM execution begins. Input: 0 0 1 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 0 Next state: 3 Output: 0
+Current state: 3
+ Input: 1 Next state: 5 Output: 0
+Current state: 5
+ Input: 1 Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:0000
+Test Case #9 01
+
+FSM execution begins. Input: 0 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 1 Next state: 5 Output: 0
+
+FSM execution completed. Final state: 5
+Output pattern:00
+Test Case #10 01001
+
+FSM execution begins. Input: 0 1 0 0 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 1 Next state: 5 Output: 0
+Current state: 5
+ Input: 0 Next state: 4 Output: 0
+Current state: 4
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 1 Next state: 5 Output: 0
+
+FSM execution completed. Final state: 5
+Output pattern:00000
+Test Case #11 0101
+
+FSM execution begins. Input: 0 1 0 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 1 Next state: 5 Output: 0
+Current state: 5
+ Input: 0 Next state: 4 Output: 0
+Current state: 4
+ Input: 1 Next state: 3 Output: 1
+
+FSM execution completed. Final state: 3
+Output pattern:0001
+Test Case #12 011
+
+FSM execution begins. Input: 0 1 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 1 Next state: 5 Output: 0
+Current state: 5
+ Input: 1 Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:000
+Test Case #13 01101
+
+FSM execution begins. Input: 0 1 1 0 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 1 Next state: 5 Output: 0
+Current state: 5
+ Input: 1 Next state: 1 Output: 0
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 1 Next state: 5 Output: 0
+
+FSM execution completed. Final state: 5
+Output pattern:00000
+Test Case #14 0111
+
+FSM execution begins. Input: 0 1 1 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 1 Next state: 5 Output: 0
+Current state: 5
+ Input: 1 Next state: 1 Output: 0
+Current state: 1
+ Input: 1 Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:0000
+Test Case #15 1
+
+FSM execution begins. Input: 1  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:0
+Test Case #16 101
+
+FSM execution begins. Input: 1 0 1  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 1 Output: 0
+Current state: 1
+ Input: 0 Next state: 2 Output: 0
+Current state: 2
+ Input: 1 Next state: 5 Output: 0
+
+FSM execution completed. Final state: 5
+Output pattern:000
+Test Case #17 11
+
+FSM execution begins. Input: 1 1  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 1 Output: 0
+Current state: 1
+ Input: 1 Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:00
