@@ -391,7 +391,7 @@ public class WMethod{
      for (int i = 0; i <= tests.size() - 1; i++)
      {
     	StringBuilder temp = new StringBuilder(); 
-    	System.out.println("Test Case #" + (i + 1) + " " + tests.get(i));
+    	System.out.println("@Test");
     	String x = tests.get(i);
     	for (int b = 0 ; b <= x.length() - 1; b++)
     	{
@@ -402,9 +402,11 @@ public class WMethod{
     	}
     		if (ans.toLowerCase().equals("junit"))
     		{
+    			System.out.println("public void testbondRegex_" + (i + 1) + "{");
     			Utilities.runFSMlite(FSM, 1, temp.toString(), Character.toString(' '));
-    			System.out.print("'" + temp.toString() + "'" + ")");
+    			System.out.print("\"" + x + "\"" + "))" + ";");
     			System.out.println();
+    			System.out.println("}");
     		}
     		if (ans.toLowerCase().equals("fsm"))
     		{

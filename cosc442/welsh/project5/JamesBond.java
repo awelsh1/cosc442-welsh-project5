@@ -9,7 +9,7 @@ public class JamesBond {
 	
 	public boolean bondRegex (String input)
 	{
-		String regex = "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, (, )]([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, (, )]007[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, (, )])[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, (, )]";
+		String regex = ".*(.*007.*).*";
 		String tbd = input; 
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(tbd);
